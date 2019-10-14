@@ -9,10 +9,8 @@ const verwerkScrollEvent = () => {
         verwijderClass();
     }
 
-    //pas de navigatie aan
     pasNavAan(scrollWaarde);
 
-    //Pas de voortgang's balk aan
     pasVoortgangAan(scrollWaarde);
 }
 
@@ -61,7 +59,6 @@ const verwijderClass = () => {
 }
 
 
-//verwerk voortgangsBalk
 const pasVoortgangAan = (getal) => {
     let voortgang = getal * 100 / (documentHoogte - viewPoortHoogte) + "%";
     document.getElementById('voortgang').style.width = voortgang;
